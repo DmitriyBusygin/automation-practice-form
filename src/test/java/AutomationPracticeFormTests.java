@@ -31,7 +31,7 @@ public class AutomationPracticeFormTests {
         $("#subjectsInput").setValue("Co").pressEnter();
         $("[for='hobbies-checkbox-1']").click();
         $("[for='hobbies-checkbox-2']").click();
-        $("#uploadPicture").uploadFile(new File("testJPEG.jpeg"));
+        $("#uploadPicture").uploadFile(new File("src/test/resources/testJPEG.jpeg"));
         $("#currentAddress").setValue("Russia, Kazan.");
         $("#react-select-3-input").setValue("Raja").pressEnter();
         $("#react-select-4-input").setValue("Jais").pressEnter();
