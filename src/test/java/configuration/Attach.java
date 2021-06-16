@@ -39,8 +39,9 @@ public class Attach {
     }
 
     public static void addVideo(String sessionId) {
+        String selenoidUrl = "https://selenoid.autotests.cloud/video/";
         try {
-            URL videoUrl = new URL(getVideoUrl(sessionId) + "/video/" + sessionId + ".mp4");
+            URL videoUrl = new URL(selenoidUrl + "/video/" + sessionId + ".mp4");
             InputStream is = null;
             Thread.sleep(1000);
             for (int i = 0; i < 10; i++) {
@@ -56,16 +57,5 @@ public class Attach {
             System.out.println("attachAllureVideo");
             e.printStackTrace();
         }
-    }
-
-    public static URL getVideoUrl(String sessionId) {
-        String videoUrl = "https://selenoid.autotests.cloud/video/" + sessionId + ".mp4";
-
-        try {
-            return new URL(videoUrl);
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        }
-        return null;
     }
 }
