@@ -39,7 +39,7 @@ public class Attach {
     }
 
     public static void addVideo(String sessionId) {
-        String selenoidUrl = "https://selenoid.autotests.cloud/video/";
+        String selenoidUrl = "https://selenoid.autotests.cloud";
         try {
             URL videoUrl = new URL(selenoidUrl + "/video/" + sessionId + ".mp4");
             InputStream is = null;
