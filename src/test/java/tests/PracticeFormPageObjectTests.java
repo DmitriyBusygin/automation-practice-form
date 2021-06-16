@@ -1,5 +1,6 @@
 package tests;
 
+import configuration.Configurator;
 import org.junit.jupiter.api.Test;
 import pages.RegistrationPage;
 

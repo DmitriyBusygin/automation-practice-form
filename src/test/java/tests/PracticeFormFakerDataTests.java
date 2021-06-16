@@ -1,5 +1,6 @@
 package tests;
 
+import configuration.Configurator;
 import com.github.javafaker.Faker;
 import org.junit.jupiter.api.Test;
 import pages.RegistrationPage;
