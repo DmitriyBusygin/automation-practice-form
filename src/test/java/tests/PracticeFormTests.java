@@ -11,11 +11,6 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class PracticeFormTests {
 
-    @BeforeAll
-    static void setStartConfig() {
-        Configuration.startMaximized = true;
-    }
-
     @Test
     void selenideSearchTest() {
         open("https://demoqa.com/automation-practice-form");
