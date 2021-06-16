@@ -29,7 +29,7 @@ public class PracticeFormFakerDataTests extends Configurator {
             hobbies = {"Sports", "Reading"};
 
     @Test
-    void registrationTest() {
+    void registrationFakerTest() {
         open("https://demoqa.com/automation-practice-form");
         regPage.setFirstName(firstName);
         regPage.setLastName(lastName);
