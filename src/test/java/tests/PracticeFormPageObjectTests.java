@@ -19,7 +19,7 @@ public class PracticeFormPageObjectTests extends Configurator {
             monthOfBirth = "March",
             yearOfBirth = "1991",
             patchPicture = "src/test/resources/",
-            namePicture = "testJPEG.jpeg",
+            namePicture = "img/testJPEG.jpeg",
             currentAddress = "Russia, Kazan.",
             state = "Rajasthan",
             city = "Jaiselmer";

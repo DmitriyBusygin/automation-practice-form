@@ -21,7 +21,7 @@ public class PracticeFormFakerDataTests extends Configurator {
             monthOfBirth = "March",
             yearOfBirth = "1991",
             patchPicture = "src/test/resources/",
-            namePicture = "testJPEG.jpeg",
+            namePicture = "img/testJPEG.jpeg",
             currentAddress = faker.address().toString(),
             state = "Rajasthan",
             city = "Jaiselmer";
