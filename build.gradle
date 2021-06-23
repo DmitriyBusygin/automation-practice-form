@@ -40,5 +40,12 @@ tasks.withType(JavaCompile) {
 }
 
 test {
+    systemProperty("browser", "opera")
     useJUnitPlatform()
+}
+
+task terminal(type: Test) {
+    useJUnitPlatform() {
+        includeTags 'terminal'
+    }
 }
