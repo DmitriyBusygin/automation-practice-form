@@ -44,6 +44,7 @@ test {
 }
 
 tasks.withType(Test) {
+    systemProperties(System.getProperties())
     testLogging {
         events "STANDARD_OUT"
     }
@@ -54,5 +55,11 @@ task terminal(type: Test) {
     systemProperty("version", System.getProperty("version", "2"))
     useJUnitPlatform {
         includeTags 'terminal'
+    }
+}
+
+task owner(type: Test) {
+    useJUnitPlatform {
+        includeTags 'owner'
     }
 }
