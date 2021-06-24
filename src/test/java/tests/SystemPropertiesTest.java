@@ -44,5 +44,7 @@ public class SystemPropertiesTest {
     void readWithTerminalFromPropertyTest() {
         String value = System.getProperty("version", "1");
         System.out.println(value);
+        String value2 = System.getProperty("browser");
+        System.out.println(value2);
     }
 }
