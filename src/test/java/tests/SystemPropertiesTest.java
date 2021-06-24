@@ -42,7 +42,7 @@ public class SystemPropertiesTest {
     @Test
     @Tag("terminal")
     void readWithTerminalFromPropertyTest() {
-        String value = System.getProperty("version", "90");
+        String value = System.getProperty("version", "1");
         System.out.println(value);
     }
 }
