@@ -57,12 +57,12 @@ public class RegistrationPage {
 
     public void setState(String state) {
         $("#state").click();
-        $("#state").$(byText(state)).click();
+        $("#state").setValue(state).pressEnter();
     }
 
     public void setCity(String city) {
         $("#city").click();
-        $("#city").$(byText(city)).click();
+        $("#city").setValue(city).pressEnter();
     }
 
     public void clickSubmit() {

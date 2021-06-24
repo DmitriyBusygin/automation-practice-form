@@ -12,6 +12,7 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
+import static configuration.Credentials.credentials;
 import static org.openqa.selenium.logging.LogType.BROWSER;
 
 public class Attach {
@@ -38,7 +39,8 @@ public class Attach {
     }
 
     public static void addVideo(String sessionId) {
-        String selenoidUrl = "https://selenoid.autotests.cloud";
+        String url = credentials.url();
+        String selenoidUrl = "https://" + url;
         try {
             URL videoUrl = new URL(selenoidUrl + "/video/" + sessionId + ".mp4");
             InputStream is = null;
