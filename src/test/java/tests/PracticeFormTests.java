@@ -27,7 +27,7 @@ public class PracticeFormTests extends Configurator {
         $("#subjectsInput").setValue("Co").pressEnter();
         $("[for='hobbies-checkbox-1']").click();
         $("[for='hobbies-checkbox-2']").click();
-        $("#uploadPicture").uploadFile(new File("src/test/resources/testJPEG.jpeg"));
+        $("#uploadPicture").uploadFile(new File("src/test/resources/img/testJPEG.jpeg"));
         $("#currentAddress").setValue("Russia, Kazan.");
         $("#react-select-3-input").setValue("Raja").pressEnter();
         $("#react-select-4-input").setValue("Jais").pressEnter();
@@ -36,7 +36,7 @@ public class PracticeFormTests extends Configurator {
         //Check data
         $(".table-responsive").shouldHave(text("Dima Busygin"), text("test@gmail.com"),
                 text("Male"), text("9171111111"), text("18 March,1991"), text("Computer Science"),
-                text("Sports, Reading"), text("img/testJPEG.jpeg"), text("Russia, Kazan."),
+                text("Sports, Reading"), text("testJPEG.jpeg"), text("Russia, Kazan."),
                 text("Rajasthan Jaiselmer"));
 
     }
