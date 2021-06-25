@@ -56,13 +56,18 @@ public class RegistrationPage {
     }
 
     public void setState(String state) {
-        $("#state").click();
-        $("#state").setValue(state).pressEnter();
+        // на сайте появилась реклама, теперь заполнение идет по другому
+        // $("#state").click();
+        // $("#state").setValue(state).pressEnter();
+        $("#react-select-3-input").setValue(state).pressEnter();
+
     }
 
     public void setCity(String city) {
-        $("#city").click();
-        $("#city").setValue(city).pressEnter();
+        // на сайте появилась реклама, теперь заполнение идет по другому
+        // $("#city").click();
+        // $("#city").setValue(city).pressEnter();
+        $("#react-select-4-input").setValue(city).pressEnter();
     }
 
     public void clickSubmit() {
