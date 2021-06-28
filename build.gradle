@@ -7,7 +7,7 @@ repositories {
     mavenCentral()
 }
 
-def allureVersion = "2.13.8",
+def allureVersion = "2.14.0",
     selenideVersion = "5.20.3",
     junitVersion = "5.7.1"
 
@@ -22,7 +22,7 @@ allure {
 }
 
 dependencies {
-    testImplementation (
+    testImplementation(
             "com.codeborne:selenide:$selenideVersion",
             "org.junit.jupiter:junit-jupiter-api:$junitVersion",
             "com.github.javafaker:javafaker:1.0.2",
@@ -61,5 +61,11 @@ task terminal(type: Test) {
 task owner(type: Test) {
     useJUnitPlatform {
         includeTags 'owner'
+    }
+}
+
+task telegram(type: Test) {
+    useJUnitPlatform {
+        includeTags 'telegram'
     }
 }
